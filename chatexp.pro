@@ -23,7 +23,8 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h \
     chattable.h \
     chatitem.h \
-    font/fontawesomeicons.h
+    font/fontawesomeicons.h \
+    itemstruct.h
 
 FORMS    += mainwindow.ui \
     chattable.ui

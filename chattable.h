@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include "chatitem.h"
+#include "itemstruct.h"
 
 class QGraphicsScene;
 class QGraphicsView;
@@ -17,7 +18,7 @@ class chattable : public QWidget
 public:
     explicit chattable(QWidget *parent = 0);
     ~chattable();
-    void AddItem(int flag);
+	void AddItem(ItemData sData);
     void ResizeView();
 private:
     Ui::chattable *ui;

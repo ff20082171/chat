@@ -20,13 +20,13 @@ chattable::~chattable()
     delete ui;
 }
 
-void chattable::AddItem(int flag)
+void chattable::AddItem(ItemData sData)
 {
     int nums = m_pscen->items().size();
     int val = chatitem::GetHeight();
-    chatitem* pChat = new chatitem(flag);
+	chatitem* pChat = new chatitem(sData);
     m_pscen->addItem(pChat);
-    if(flag == chatitem::left)
+	if(sData.iFlag == chatitem::left)
         pChat->setPos(0,val*nums);
     else
     {
